@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asistente Motivacional</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-heart icon"></i> Asistente Motivacional</h1>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" placeholder="Tu nombre">
+
+    <label for="motivacion">¿Qué te motiva?</label>
+    <input type="text" id="motivacion" placeholder="Ej: mi hija, mi carrera">
+
+    <label for="meta">Meta laboral</label>
+    <input type="text" id="meta" placeholder="Ej: comprar una moto">
+
+    <label for="intereses">Intereses</label>
+    <select id="intereses" multiple>
+      <option value="humor">Humor</option>
+      <option value="tecnología">Tecnología</option>
+      <option value="deportes">Deportes</option>
+      <option value="música">Música</option>
+      <option value="animales">Animales</option>
+    </select>
+
+    <label for="estado">¿Cómo te sientes?</label>
+    <select id="estado">
+      <option value="bien">Bien</option>
+      <option value="cansado">Cansado</option>
+      <option value="estresado">Estresado</option>
+      <option value="motivado">Motivado</option>
+    </select>
+
+    <button id="enviarEstado">Enviar</button>
+
+    <div id="respuesta"></div>
+    <div id="seguimiento"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
